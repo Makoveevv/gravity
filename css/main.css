@@ -81,7 +81,7 @@ button {
   right: 14px;
   top: 142px;
   z-index: -10;
-  background-image: url('/img/img-12.jpg');
+  background-image: url('../img/img-12.jpg');
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 80% 100%;
@@ -95,7 +95,7 @@ button {
   position: absolute;
   left: 0;
   bottom: 20%;
-  background-image: url('/img/img-13.jpg');
+  background-image: url('../img/img-13.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   width: 40%;
@@ -103,7 +103,7 @@ button {
 }
 .hero__video::after {
   content: '';
-  background-image: url('/img/play.svg');
+  background-image: url('../img/play.svg');
   display: block;
   width: 65px;
   height: 65px;
@@ -113,7 +113,7 @@ button {
 }
 .section-problems__img {
   display: block;
-  background-image: url('/img/img-11.jpg');
+  background-image: url('../img/img-11.jpg');
   background-repeat: no-repeat;
   background-position: left center;
   width: 444px;
@@ -131,7 +131,7 @@ button {
   margin-bottom: 20px;
 }
 .section-problems__user {
-  background: url('/img/user.jpg') no-repeat left center;
+  background: url('../img/user.jpg') no-repeat left center;
   padding: 3px 0 3px 96px;
 }
 .section-problems__username {
@@ -196,7 +196,7 @@ button {
 }
 .owl-carousel__play {
   display: block;
-  background: url('/img/play.svg');
+  background: url('../img/play.svg');
   width: 65px;
   height: 65px;
   position: absolute;
