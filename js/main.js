@@ -3,7 +3,7 @@ $(function(){
         loop:true,
         margin:30,
         nav:true,
-        navText: ['<img src="img/left.svg">', '<img src="img/right.svg">'],
+        navText: ['<img src="../img/left.svg">', '<img src="../img/right.svg">'],
         startPosition:1,
         dots: false,
         responsive:{
