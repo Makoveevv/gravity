@@ -1,0 +1,246 @@
+//compress: false
+
+//vars
+@black: #222;
+
+@import "mixins";
+
+body{
+    font-family: 'Fira Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    padding: 0;
+    margin: 0;
+}
+
+ul, ol{
+    list-style: none
+}
+
+.section-heading{
+    .heading(@black);
+}
+
+.be-static{
+    position: static;
+}
+
+.vh-depended{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+}
+
+button{
+    display: block;
+    background-color: transparent;
+    border: none;
+}
+
+.btn{
+    .label(#fff);
+    background-color: #4737FF;
+    text-transform: uppercase;
+    border-radius: 0;
+
+    &:focus,
+    &:hover{
+        background-color: darken(#4737FF, 3%);
+        color: #fff;
+    }
+}
+
+//header
+.header{
+    height: 105vh;
+}
+
+//nav
+.nav{
+    padding-top: 59px;
+    margin-bottom: 127px;
+}
+
+//Offer
+.offer{
+    &__heading{
+    .offer-title();
+    letter-spacing: -1px
+    }
+
+    &__description{
+    .paragraph(@black);
+    opacity: 0.7;
+    width: 70%;
+    margin: 30px 0 56px;
+    }
+
+    &__btn{
+        width: 189px;
+        padding: 13px 0;
+    }
+}
+
+//Hero
+.hero{
+    position: absolute;
+    right: 14px;
+    top: 142px;
+    z-index: -10;
+    background-image: url('/img/img-12.jpg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 80% 100%;
+    width: 55%;
+    height: 88vh;
+    
+    &__video{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        left: 0;
+        bottom: 20%;
+
+        background-image: url('/img/img-13.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 40%;
+        height: 33%;
+
+        &::after{
+            content: '';
+            background-image: url('/img/play.svg');
+            display: block;
+            width: 65px;
+            height: 65px;
+        }
+    }
+}
+
+//Problems
+.section-problems{
+    padding-top: 137px;
+
+    &__img{
+        display: block;
+        background-image: url('/img/img-11.jpg');
+        background-repeat: no-repeat;
+        background-position: left center;
+        width: 444px;
+        height: 564px;
+    }
+
+    &__content{
+        width: 92%;
+    }
+
+    &__descriptions{
+        width: 75%;
+        padding: 30px 0 61px;
+        opacity: 0.7;
+
+        &_first{
+            margin-bottom: 20px;
+        }
+    }
+
+    &__user{
+        background: url('/img/user.jpg') no-repeat left center;
+        padding: 3px 0 3px 96px;
+    }
+
+    &__username{
+        .title(@black);
+    }
+
+    &__user_info{
+        .paragraph(@black);
+        opacity: 0.7;
+    }
+}
+
+//Services
+.section-services{
+    padding-top: 142px;
+
+    &__label{
+        .label(@black);
+        opacity: 0.7;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+
+    &__list_left{
+        margin-left: 37px;
+    }
+
+    &__item{
+        .paragraph(@black);
+        opacity: 0.5;
+
+        &:not(:last-child){
+            margin-bottom: 21px;
+        }
+    }
+}
+
+//Carousel
+.owl-carousel{
+    margin-top: 99px;
+}
+
+.owl-carousel .item, .owl-item{
+    width: 825px !important;
+    position: relative;
+}
+
+.owl-theme .owl-nav, .owl-theme .owl-dots{
+    text-align: left !important;
+}
+
+.owl-theme .owl-nav [class*=owl-]{
+    margin: 0;
+}
+
+.owl-nav{
+    margin-top: 50px !important;
+}
+
+.owl-prev{
+    margin-right: 25px !important;
+}
+
+.owl-carousel__play{
+    display: block;
+    background: url('/img/play.svg');
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -32px;
+    margin-left: -32px;
+    cursor: pointer;
+}
+
+//Result
+// .section-result{
+//     padding-top: 219px;
+//     width: 50%;
+//     height: 552px;
+//     background: url('/img/img-7.jpg') no-repeat top left / 80% 100%;
+//     position: absolute;
+
+//     &__img{
+//     width: 350px;
+//     height: 453px;
+//     position: absolute;
+//     right: 0;
+//     bottom: 0;
+//     box-shadow: 30px 80px 130px rgba(0, 0, 0, .25);
+//     }
+// }
